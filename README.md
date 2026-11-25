@@ -59,11 +59,34 @@ Open `docs/index.html` in a browser to view the dashboard.
 
 ## Key findings
 
-_The analysis runs automatically with GitHub Actions; findings appear here when it finishes._
+- The overall default rate is 33.52% with an approval rate of 67.56%.
+- Applicants without a checking account have a default rate of 56.65%, compared to 9.3% for those with a negative balance.
+- Loan purposes such as 'other' (64.6%), 'repairs' (56.54%), and 'appliances' (51.16%) show the highest default rates.
+- Risk score bands strongly predict default: Very High (80-100) has 82.61% default rate, while Very Low (0-19) has 16.9%.
+- The current approval policy (approve all) results in 1670 expected defaults; approving only risk score <60 reduces defaults to 737 (21.79% default rate).
+- Portfolio at risk is highest for 'repairs' (68.71%) and 'other' (69.12%) segments.
+
+**Recommendations**
+- Implement a risk-based approval policy that rejects applicants with risk scores of 60 or higher to reduce expected defaults from 1670 to 737.
+- Tighten approval criteria for high-risk loan purposes such as 'other', 'repairs', and 'appliances', and for applicants without a checking account.
+- Monitor and manage portfolio at risk, particularly for segments with PAR above 60%, such as 'repairs' and 'other'.
+
+<details><summary>🇫🇷 Résumé en français</summary>
+
+Ce projet analyse les données des demandeurs de prêt pour segmenter par profil de risque et réduire les taux de défaut. Les principales conclusions montrent que le statut du compte courant, le motif du prêt et les bandes de score de risque sont de forts prédicteurs de défaut, et qu'une modification de la politique d'approbation peut réduire considérablement les défauts.
+
+- Le taux de défaut global est de 33,52% avec un taux d'approbation de 67,56%.
+- Les demandeurs sans compte courant ont un taux de défaut de 56,65%, contre 9,3% pour ceux avec un solde négatif.
+- Les motifs de prêt tels que 'autre' (64,6%), 'réparations' (56,54%) et 'électroménager' (51,16%) présentent les taux de défaut les plus élevés.
+- Les bandes de score de risque prédisent fortement le défaut : Très élevé (80-100) a 82,61% de défaut, tandis que Très faible (0-19) a 16,9%.
+- La politique d'approbation actuelle (approuver tout) entraîne 1670 défauts attendus ; approuver uniquement un score de risque <60 réduit les défauts à 737 (taux de défaut de 21,79%).
+- Le portefeuille à risque est le plus élevé pour les segments 'réparations' (68,71%) et 'autre' (69,12%).
+
+</details>
 
 ## Dashboard
 
-📊 Dashboard: published with the project.
+📊 **Interactive dashboard:** https://bmmahdi.github.io/credit-risk-dashboard-retail-bank/
 
 ## Skills demonstrated
 
