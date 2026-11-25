@@ -1,0 +1,5 @@
+CheckingStatus,applicants,defaults,default_rate_pct,avg_loan_amount
+no_checking,1993,1129,56.65,5362.0
+greater_200,305,127,41.64,3892.0
+0_to_200,1304,284,21.78,2658.0
+less_0,1398,130,9.3,1475.0

@@ -1,0 +1,6 @@
+risk_band,applicants,defaults,default_rate_pct,avg_loan_amount
+01 Very Low (0-19),71,12,16.9,2267.0
+02 Low (20-39),1290,244,18.91,2110.0
+03 Medium (40-59),2021,481,23.8,2725.0
+04 High (60-79),1526,857,56.16,5492.0
+05 Very High (80-100),92,76,82.61,6851.0

@@ -1,0 +1,10 @@
+{
+  "total_applicants": 4982,
+  "default_rate_pct": 33.52,
+  "approval_rate_pct": 67.56,
+  "avg_loan_amount": 3492.0,
+  "avg_risk_score": 50.3,
+  "portfolio_at_risk_pct": 48.59,
+  "defaults_avoided": 933,
+  "high_risk_share_pct": 32.44
+}
