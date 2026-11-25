@@ -1,0 +1,19 @@
+{
+  "title": "Credit Risk Assessment Dashboard — Retail Bank (Canada)",
+  "subtitle": "Segmenting loan applicants by risk profile to reduce defaults and optimize approvals",
+  "kpis": [
+    {"label": "Total applicants", "key": "total_applicants", "format": "number"},
+    {"label": "Default rate", "key": "default_rate_pct", "format": "percent"},
+    {"label": "Approval rate (score < 60)", "key": "approval_rate_pct", "format": "percent"},
+    {"label": "Average loan amount", "key": "avg_loan_amount", "format": "money"},
+    {"label": "Portfolio at risk", "key": "portfolio_at_risk_pct", "format": "percent"},
+    {"label": "Defaults avoided", "key": "defaults_avoided", "format": "number"}
+  ],
+  "charts": [
+    {"title": "Default rate by risk band", "type": "bar", "file": "data/default_by_risk_band.json", "x": "risk_band", "y": ["default_rate_pct"]},
+    {"title": "Default rate by loan purpose", "type": "bar", "file": "data/default_by_purpose.json", "x": "LoanPurpose", "y": ["default_rate_pct"]},
+    {"title": "Default rate by checking status", "type": "bar", "file": "data/default_by_checking.json", "x": "CheckingStatus", "y": ["default_rate_pct"]},
+    {"title": "Approval policy simulation", "type": "bar", "file": "data/approval_policy.json", "x": "policy", "y": ["approval_rate_pct", "default_rate_pct"]},
+    {"title": "Portfolio at risk by purpose", "type": "bar", "file": "data/portfolio_at_risk.json", "x": "LoanPurpose", "y": ["exposure_at_risk"]}
+  ]
+}
